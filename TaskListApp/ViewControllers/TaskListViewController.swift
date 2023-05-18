@@ -7,29 +7,6 @@
 
 import UIKit
 
-enum Alert {
-    case newTask
-    case editTask
-    
-    var title: String {
-        switch self {
-        case .newTask:
-            return "New Task"
-        case .editTask:
-            return "Edit Task"
-        }
-    }
-    
-    var message: String {
-        switch self {
-        case .newTask:
-            return "What do you want to do?"
-        case .editTask:
-            return "What do you want to change?"
-        }
-    }
-}
-
 
 final class TaskListViewController: UITableViewController {
     private let storageManager = StorageManager.shared
