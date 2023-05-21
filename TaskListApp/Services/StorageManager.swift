@@ -14,9 +14,6 @@ final class StorageManager {
     private init() {}
     
     // MARK: - Core Data stack
-    
-    let viewContext = StorageManager.shared.persistentContainer.viewContext
-    
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "TaskListApp")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
